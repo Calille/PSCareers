@@ -1,4 +1,4 @@
-import type { Job, StaffMember } from '@/types';
+import type { Candidate, Job, StaffMember } from '@/types';
 
 // Mock data — dynamic `postedAt` dates keep listings feeling fresh in dev without
 // requiring maintenance. Will be replaced by Supabase-backed data in a later phase.
@@ -352,5 +352,235 @@ export const mockStaff: StaffMember[] = [
     yearsExperience: 6,
     qualification: 'BSc Computer Science',
     area: 'London & Remote',
+  },
+];
+
+// Placeholder candidate showcase — all blurbs/bios strictly anonymised.
+// No names, photos, contact details, or identifying employers. Client approval pending.
+export const mockCandidates: Candidate[] = [
+  {
+    id: 'PSC-0042',
+    roleTitle: 'Senior Planning Consultant',
+    roleType: 'Planning',
+    shortBlurb:
+      'Chartered planner with a track record in complex residential and mixed-use applications across the home counties.',
+    fullBio:
+      'A chartered town planner with over a decade of experience guiding major schemes through determination, appeal and post-consent delivery. Brings strong client-facing and member-briefing skills, and has acted as lead planner on several £50m+ regeneration projects. Known for robust policy analysis and a pragmatic approach to viability. Looking for a senior in-house role or a specialist consultancy position within reach of the South East.',
+    yearsExperience: 12,
+    region: 'South East',
+    qualifications: ['MRTPI', 'BA (Hons) Town Planning'],
+    specialisms: ['Development management', 'Major applications', 'Appeals'],
+    contractTypeSought: 'Permanent',
+    availability: 'Immediately',
+  },
+  {
+    id: 'PSC-0057',
+    roleTitle: 'Interim Head of Regeneration',
+    roleType: 'Regeneration',
+    shortBlurb:
+      'Programme-level regeneration leader used to standing up teams quickly and delivering town-centre transformation at pace.',
+    fullBio:
+      'A senior regeneration professional with eighteen years across combined authorities and unitary councils in the East of England. Led multi-million pound Levelling Up and Towns Fund programmes from bid through to delivery. Comfortable managing elected-member scrutiny, private sector partners and cross-departmental teams. Seeking an interim engagement where they can add structure and pace to an existing programme.',
+    yearsExperience: 18,
+    region: 'East of England',
+    qualifications: ['MRTPI', 'PRINCE2 Practitioner'],
+    specialisms: ['Programme leadership', 'Funding bids', 'Stakeholder management'],
+    contractTypeSought: 'Interim',
+    availability: '4 weeks notice',
+  },
+  {
+    id: 'PSC-0063',
+    roleTitle: 'Social Worker – Children & Families',
+    roleType: 'Social Care',
+    shortBlurb:
+      "Experienced child protection practitioner with a calm, evidence-led approach and a strong record in complex cases.",
+    fullBio:
+      "A registered social worker with six years in statutory children's services, currently carrying a mixed caseload including child protection and looked-after children. Known for high-quality assessments, clear written work and effective collaboration with partner agencies. Has mentored newly qualified colleagues and contributed to team learning reviews. Open to permanent moves within the North and Midlands.",
+    yearsExperience: 6,
+    region: 'North & Midlands',
+    qualifications: ['BA (Hons) Social Work', 'Social Work England registered'],
+    specialisms: ['Child protection', 'Looked-after children', 'Assessment'],
+    contractTypeSought: 'Permanent',
+    availability: 'Immediately',
+  },
+  {
+    id: 'PSC-0071',
+    roleTitle: 'Policy Officer',
+    roleType: 'Policy',
+    shortBlurb:
+      'Early-career policy professional with experience in central government and a sharp analytical background.',
+    fullBio:
+      'A policy officer with three years in a Whitehall department, contributing to submissions, consultation responses and ministerial briefings. Comfortable turning complex evidence into clear, decision-ready products and briefing senior officials at short notice. Strong interest in economic and labour-market policy. Looking for a mid-level move into local or combined-authority strategy.',
+    yearsExperience: 3,
+    region: 'London',
+    qualifications: ['MA Public Policy', 'BA (Hons) Economics'],
+    specialisms: ['Policy analysis', 'Consultation', 'Ministerial submissions'],
+    contractTypeSought: 'Permanent',
+    availability: '2 weeks notice',
+  },
+  {
+    id: 'PSC-0084',
+    roleTitle: 'Adult Social Care Commissioning Lead',
+    roleType: 'Commissioning',
+    shortBlurb:
+      'Strategic commissioner with deep experience in adults pathways, market shaping and high-value tender oversight.',
+    fullBio:
+      'Fifteen years in public sector commissioning, most recently leading adult social care contracts with an annual spend exceeding £80m. Delivered successful re-procurements of home care and supported-living frameworks, and led market-shaping work following the national fair-cost-of-care exercise. Brings a pragmatic, relationship-based approach to provider engagement. Available for interim engagements immediately.',
+    yearsExperience: 15,
+    region: 'South East',
+    qualifications: ['CMI Level 7 Strategic Management', 'BA (Hons) Social Policy'],
+    specialisms: ['Adult social care', 'Market shaping', 'Procurement'],
+    contractTypeSought: 'Interim',
+    availability: 'Immediately',
+  },
+  {
+    id: 'PSC-0088',
+    roleTitle: 'Director of Adult Social Care',
+    roleType: 'Social Care',
+    shortBlurb:
+      'Executive social care leader with statutory DASS experience across two authorities and a reputation for turnaround.',
+    fullBio:
+      'A chief officer with twenty-two years in adult social care, including seven as a statutory Director of Adult Social Services across two authorities. Led successful CQC-style assurance preparation and delivered balanced budgets against a rising demand profile. Comfortable working closely with ICB partners and trusted by members. Open to permanent DASS opportunities nationally following the end of the current term.',
+    yearsExperience: 22,
+    region: 'National',
+    qualifications: ['Social Work England registered', 'MSc Social Policy'],
+    specialisms: ['DASS leadership', 'ICB partnerships', 'Assurance'],
+    contractTypeSought: 'Permanent',
+    availability: '3 months notice',
+  },
+  {
+    id: 'PSC-0092',
+    roleTitle: 'Transport Planner',
+    roleType: 'Planning',
+    shortBlurb:
+      'Mid-weight transport planner with a strong background in active travel and major highways schemes.',
+    fullBio:
+      'Seven years in transport planning, delivering Local Transport Plan evidence bases, active travel schemes and major junction upgrades. Comfortable working with modelling teams and translating technical outputs for member briefings. Recently led the business case for a multi-million pound active travel programme successfully secured through Active Travel England. Open to permanent roles across the East of England.',
+    yearsExperience: 7,
+    region: 'East of England',
+    qualifications: ['MSc Transport Planning', 'MCIHT'],
+    specialisms: ['Active travel', 'Business cases', 'Highways'],
+    contractTypeSought: 'Permanent',
+    availability: 'Immediately',
+  },
+  {
+    id: 'PSC-0101',
+    roleTitle: 'Executive Headteacher',
+    roleType: 'Education Leadership',
+    shortBlurb:
+      'Executive head across a small primary federation with strong Ofsted outcomes and MAT partnership experience.',
+    fullBio:
+      'A serving executive headteacher leading a federation of three primary schools, all graded Good or better at their most recent inspections. Brings deep experience of school improvement, finance and governance, and has supported partner schools through federation and MAT processes. Interested in CEO-track leadership in a small-to-medium multi-academy trust, or a strategic education role within local government.',
+    yearsExperience: 16,
+    region: 'South East',
+    qualifications: ['NPQH', 'QTS', 'MA Education'],
+    specialisms: ['School improvement', 'MAT leadership', 'Governance'],
+    contractTypeSought: 'Permanent',
+    availability: 'Summer 2026',
+  },
+  {
+    id: 'PSC-0108',
+    roleTitle: 'Senior Procurement Manager',
+    roleType: 'Procurement',
+    shortBlurb:
+      'MCIPS-qualified procurement lead with strong central-government framework experience across digital and estates.',
+    fullBio:
+      'Eleven years delivering complex public procurement, most recently for a major central government department. Strong track record running OJEU/Find-a-Tender processes on digital, professional services and estates categories. Known for building collaborative relationships with suppliers while maintaining tight commercial oversight. Available for interim assignments nationally from next month.',
+    yearsExperience: 11,
+    region: 'National',
+    qualifications: ['MCIPS', 'Contract Management Level 5'],
+    specialisms: ['Digital procurement', 'Professional services', 'Frameworks'],
+    contractTypeSought: 'Interim',
+    availability: '4 weeks notice',
+  },
+  {
+    id: 'PSC-0115',
+    roleTitle: 'Emergency Planning Manager',
+    roleType: 'Emergency Services',
+    shortBlurb:
+      'Resilience professional with LRF leadership experience and a calm head in multi-agency incident response.',
+    fullBio:
+      'Fourteen years in civil contingencies planning across a metropolitan authority and a blue-light service. Chaired multi-agency working groups on flood, cyber and pandemic planning, and led debriefs following two recent regional incidents. Recognised by peers as a pragmatic and collaborative leader. Seeking a permanent strategic role that combines planning, response and community resilience.',
+    yearsExperience: 14,
+    region: 'London',
+    qualifications: ['BCMS Level 6', 'ILM Level 5 Leadership'],
+    specialisms: ['LRF leadership', 'Multi-agency exercises', 'Debriefs'],
+    contractTypeSought: 'Permanent',
+    availability: '6 weeks notice',
+  },
+  {
+    id: 'PSC-0122',
+    roleTitle: 'Housing Strategy Lead',
+    roleType: 'Housing',
+    shortBlurb:
+      'Housing strategy specialist with deep experience on local plans, HRA business planning and tenant engagement.',
+    fullBio:
+      'Nine years across strategic housing, tenancy services and housing needs within a large metropolitan authority. Led the refresh of the housing strategy and contributed to the authority’s most recent Local Plan. Comfortable with member committees and tenant panels alike, and strong on data-led needs analysis. Open to contract work to stabilise an existing team.',
+    yearsExperience: 9,
+    region: 'North & Midlands',
+    qualifications: ['CIH Level 5', 'BA (Hons) Housing Studies'],
+    specialisms: ['Housing strategy', 'HRA', 'Tenant engagement'],
+    contractTypeSought: 'Contract',
+    availability: 'Immediately',
+  },
+  {
+    id: 'PSC-0127',
+    roleTitle: 'Senior Finance Business Partner',
+    roleType: 'Finance',
+    shortBlurb:
+      'CIPFA-qualified finance lead with experience business-partnering adult social care, capital and corporate portfolios.',
+    fullBio:
+      'A CIPFA-qualified finance professional with thirteen years across two upper-tier authorities. Currently business-partnering adult social care, leading medium-term financial planning and budget monitoring against demand-led pressures. Recently supported an external peer review of the MTFS. Open to permanent senior roles across the South East.',
+    yearsExperience: 13,
+    region: 'South East',
+    qualifications: ['CIPFA qualified', 'BA (Hons) Accounting & Finance'],
+    specialisms: ['MTFS', 'Adult social care finance', 'Capital programmes'],
+    contractTypeSought: 'Permanent',
+    availability: '1 month notice',
+  },
+  {
+    id: 'PSC-0133',
+    roleTitle: 'Regeneration Project Manager',
+    roleType: 'Regeneration',
+    shortBlurb:
+      'Project manager delivering town-centre regeneration schemes end-to-end, from funding bid through construction hand-back.',
+    fullBio:
+      'Five years in regeneration project management, most recently delivering a Levelling Up-funded public realm scheme in a coastal market town. Comfortable leading a matrixed team of planners, engineers and quantity surveyors, and managing elected-member expectations across programme delivery. Looking for a contract role to bridge into their next permanent regeneration move.',
+    yearsExperience: 5,
+    region: 'South West',
+    qualifications: ['APM PMQ', 'BA (Hons) Urban Studies'],
+    specialisms: ['Public realm', 'Levelling Up delivery', 'Stakeholder management'],
+    contractTypeSought: 'Contract',
+    availability: 'Immediately',
+  },
+  {
+    id: 'PSC-0140',
+    roleTitle: 'Principal Social Worker (Adults)',
+    roleType: 'Social Care',
+    shortBlurb:
+      'AMHP-qualified principal social worker with a strong record in practice development and safeguarding leadership.',
+    fullBio:
+      "Nineteen years in adult social care, including seven in Principal Social Worker roles. Led authority-wide practice development following the implementation of the Liberty Protection Safeguards, and oversaw the response to two high-profile safeguarding adults reviews. Approved Mental Health Professional with continued operational rota involvement. Open to permanent roles across the East of England.",
+    yearsExperience: 19,
+    region: 'East of England',
+    qualifications: ['AMHP', 'Social Work England registered', 'MSW'],
+    specialisms: ['Practice leadership', 'Safeguarding', 'Mental health'],
+    contractTypeSought: 'Permanent',
+    availability: '12 weeks notice',
+  },
+  {
+    id: 'PSC-0148',
+    roleTitle: 'Central Government Policy Advisor',
+    roleType: 'Policy',
+    shortBlurb:
+      'Fast Stream-trained policy advisor with submissions, strategy and delivery experience across two departments.',
+    fullBio:
+      'Eight years of central government experience, completing the Civil Service Fast Stream and progressing through economic and labour-market policy posts. Has led work on a national strategy document published in 2024, and managed a cross-department review of a £100m+ programme. Looking for an interim engagement supporting a combined authority or devolved body during a period of strategic change.',
+    yearsExperience: 8,
+    region: 'National',
+    qualifications: ['MPA', 'Civil Service Fast Stream'],
+    specialisms: ['Strategy', 'Cross-government programmes', 'Economic policy'],
+    contractTypeSought: 'Interim',
+    availability: '4 weeks notice',
   },
 ];

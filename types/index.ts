@@ -32,3 +32,39 @@ export interface StaffMember {
   qualification: string;
   area: string;
 }
+
+export type CandidateRoleType =
+  | 'Planning'
+  | 'Regeneration'
+  | 'Housing'
+  | 'Social Care'
+  | 'Policy'
+  | 'Commissioning'
+  | 'Education Leadership'
+  | 'Emergency Services'
+  | 'Finance'
+  | 'Procurement';
+
+export type CandidateRegion =
+  | 'National'
+  | 'London'
+  | 'South East'
+  | 'South West'
+  | 'East of England'
+  | 'North & Midlands';
+
+export type CandidateContractSought = 'Permanent' | 'Interim' | 'Contract';
+
+export interface Candidate {
+  id: string;
+  roleTitle: string;
+  roleType: CandidateRoleType;
+  shortBlurb: string;
+  fullBio: string;
+  yearsExperience: number;
+  region: CandidateRegion;
+  qualifications: string[];
+  specialisms: string[];
+  contractTypeSought: CandidateContractSought;
+  availability: string;
+}
