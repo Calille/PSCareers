@@ -1,14 +1,26 @@
-export type ContractType = 'Permanent' | 'Fixed-term' | 'Contract' | 'Temporary' | 'Part-time';
+export type ContractType = 'Permanent' | 'Interim' | 'Contract' | 'Temporary';
+
+export type Sector =
+  | 'Local government'
+  | 'Central government'
+  | 'NHS'
+  | 'Education'
+  | 'Emergency services'
+  | 'Housing';
 
 export interface Job {
   id: string;
   title: string;
+  organisation: string;
   location: string;
+  region: string;
   salary: string;
+  salaryMin: number;
+  salaryMax: number;
   contractType: ContractType;
+  sector: Sector;
   description: string;
-  department?: string;
-  postedAt?: string;
+  postedAt: string;
 }
 
 export interface StaffMember {
