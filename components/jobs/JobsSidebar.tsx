@@ -23,7 +23,7 @@ export function JobsSidebar() {
           to your experience.
         </p>
         <Link
-          href="/register?as=candidate"
+          href="/register?type=candidate"
           className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:text-primary-800"
         >
           Register your interest

@@ -28,14 +28,14 @@ export function RegisterCta() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <Link
-                href="/register?as=candidate"
+                href="/register?type=candidate"
                 className="btn-primary btn-lg w-full sm:w-auto"
               >
                 <UserRound className="h-4 w-4" aria-hidden="true" />
                 I&apos;m a candidate
               </Link>
               <Link
-                href="/register?as=employer"
+                href="/register?type=employer"
                 className="btn-secondary btn-lg w-full sm:w-auto"
               >
                 <Briefcase className="h-4 w-4" aria-hidden="true" />
