@@ -1,11 +1,26 @@
 import type { Metadata } from 'next';
-import { ComingSoon } from '@/components/ComingSoon';
+import { AboutCta } from '@/components/about/AboutCta';
+import { AboutHero } from '@/components/about/AboutHero';
+import { AboutStats } from '@/components/about/AboutStats';
+import { AboutStory } from '@/components/about/AboutStory';
+import { AboutTeamTeaser } from '@/components/about/AboutTeamTeaser';
+import { AboutValues } from '@/components/about/AboutValues';
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'About Public Sector Careers — our mission, values and people.',
+  title: 'About us',
+  description:
+    'Public Sector Careers is a UK recruitment specialist for councils, government agencies, the NHS and public sector bodies.',
 };
 
 export default function AboutPage() {
-  return <ComingSoon title="About" />;
+  return (
+    <>
+      <AboutHero />
+      <AboutStory />
+      <AboutValues />
+      <AboutStats />
+      <AboutTeamTeaser />
+      <AboutCta />
+    </>
+  );
 }
