@@ -3,7 +3,6 @@ import { AboutCta } from '@/components/about/AboutCta';
 import { AboutHero } from '@/components/about/AboutHero';
 import { AboutStats } from '@/components/about/AboutStats';
 import { AboutStory } from '@/components/about/AboutStory';
-import { AboutTeamTeaser } from '@/components/about/AboutTeamTeaser';
 import { AboutValues } from '@/components/about/AboutValues';
 
 export const metadata: Metadata = {
@@ -19,7 +18,6 @@ export default function AboutPage() {
       <AboutStory />
       <AboutValues />
       <AboutStats />
-      <AboutTeamTeaser />
       <AboutCta />
     </>
   );
