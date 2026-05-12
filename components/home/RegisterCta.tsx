@@ -27,12 +27,15 @@ export function RegisterCta() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+              {/* PLACEHOLDER COPY — Claire requested a stronger, more explicit
+                  candidate path ("Register and upload CV"); awaiting final
+                  client wording sign-off. */}
               <Link
                 href="/register?type=candidate"
                 className="btn-primary btn-lg w-full sm:w-auto"
               >
                 <UserRound className="h-4 w-4" aria-hidden="true" />
-                I&apos;m a candidate
+                Register and upload CV
               </Link>
               <Link
                 href="/register?type=employer"

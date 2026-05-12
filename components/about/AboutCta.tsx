@@ -22,10 +22,12 @@ export function AboutCta() {
             conversation — we&apos;ll do the rest.
           </p>
 
+          {/* PLACEHOLDER COPY — Phase 7: candidate path now explicitly mentions
+              CV upload to make the next step unambiguous. */}
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link href="/register?type=candidate" className="btn-primary btn-lg">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
-              Register as a candidate
+              Register and upload CV
             </Link>
             <Link href="/post-a-job" className="btn-secondary btn-lg">
               <Briefcase className="h-4 w-4" aria-hidden="true" />

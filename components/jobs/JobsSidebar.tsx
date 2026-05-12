@@ -18,15 +18,16 @@ export function JobsSidebar() {
         <h3 className="mt-3 text-base font-semibold text-neutral-900">
           Can&apos;t find the right role?
         </h3>
+        {/* PLACEHOLDER COPY — Phase 7: candidate path explicitly mentions CV. */}
         <p className="mt-2 text-sm leading-relaxed text-neutral-600">
-          Register as a candidate and a specialist consultant will be in touch with roles tailored
-          to your experience.
+          Register and upload your CV — a specialist consultant will be in touch with roles
+          tailored to your experience.
         </p>
         <Link
           href="/register?type=candidate"
           className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:text-primary-800"
         >
-          Register your interest
+          Register and upload CV
           <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
         </Link>
       </div>

@@ -44,15 +44,9 @@ export function CandidateCard({ candidate, index, onOpen }: CandidateCardProps) 
 
       <hr className="my-5 border-neutral-100" />
 
-      <dl className="mt-auto grid grid-cols-3 gap-3 text-left">
-        <div>
-          <dt className="text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
-            Experience
-          </dt>
-          <dd className="mt-1 text-sm font-semibold text-neutral-900">
-            {candidate.yearsExperience} yrs
-          </dd>
-        </div>
+      {/* Experience column intentionally removed (Phase 7 director feedback) —
+          full years-experience still appears in the expanded modal view. */}
+      <dl className="mt-auto grid grid-cols-2 gap-3 text-left">
         <div>
           <dt className="text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
             Region

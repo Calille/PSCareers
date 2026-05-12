@@ -11,17 +11,27 @@ export function Footer() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-3 md:gap-8 md:py-16">
         <div className="space-y-4">
           <Logo />
+          {/* Client-supplied wording (Phase 7) — exact copy. */}
           <p className="max-w-sm text-sm text-neutral-600">
-            The UK&apos;s specialist careers platform for the public sector — connecting talented
-            professionals with councils, agencies and government teams.
+            The UK&apos;s specialist careers platform for the public sector — connecting
+            professionals with opportunities across Local Government, NHS, Civil Service,
+            Housing, Emergency Services and Public Bodies.
           </p>
+          {/*
+            PLACEHOLDER COPY — registered office address and company number must
+            be supplied by the client before launch. Required by UK law
+            (Companies Act 2006). Update the address lines and the company
+            number below when received.
+          */}
           <address className="not-italic text-sm text-neutral-600">
             <div className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-600" aria-hidden="true" />
               <span>
                 Registered office
                 <br />
-                123 Sample Street, London, EC1A 1AA
+                [Address line 1], [Address line 2], [Postcode]
+                <br />
+                Public Sector Careers Ltd · Company No. [TBC]
               </span>
             </div>
           </address>
@@ -84,7 +94,8 @@ export function Footer() {
       <div className="border-t border-neutral-200">
         <div className="container-page flex flex-col items-start justify-between gap-2 py-5 text-xs text-neutral-500 md:flex-row md:items-center">
           <p>© {year} Public Sector Careers Ltd. All rights reserved.</p>
-          <p>Registered in England &amp; Wales · Company no. 00000000</p>
+          {/* PLACEHOLDER — company number to be confirmed by client. */}
+          <p>Registered in England &amp; Wales · Company No. [TBC]</p>
         </div>
       </div>
     </footer>

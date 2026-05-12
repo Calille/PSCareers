@@ -23,7 +23,6 @@ export const SECTORS: Sector[] = [
   'Local government',
   'Central government',
   'NHS',
-  'Education',
   'Emergency services',
   'Housing',
 ];

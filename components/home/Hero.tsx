@@ -46,12 +46,14 @@ export function Hero() {
             </span>
           </motion.h1>
 
+          {/* Client-supplied wording (Phase 7) — exact copy. */}
           <motion.p
             {...anim(0.1)}
             className="mx-auto mt-5 max-w-2xl text-base text-neutral-600 md:text-lg"
           >
-            Find meaningful roles across UK councils, agencies and government teams — with
-            consultants who know the public sector inside out.
+            The UK&apos;s specialist careers platform for the public sector — connecting
+            professionals with opportunities across Local Government, NHS, Civil Service,
+            Housing, Emergency Services and Public Bodies.
           </motion.p>
 
           <motion.div {...anim(0.15)} className="mt-10">
@@ -60,8 +62,16 @@ export function Hero() {
 
           <motion.div
             {...anim(0.2)}
-            className="mt-6 flex justify-center text-sm text-neutral-500"
+            className="mt-6 flex flex-col items-center justify-center gap-x-6 gap-y-2 text-sm text-neutral-500 sm:flex-row"
           >
+            <Link
+              href="/register?type=candidate"
+              className="inline-flex items-center gap-1 font-semibold text-primary-700 hover:text-primary-800"
+            >
+              New here? Register and upload your CV
+              <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+            </Link>
+            <span aria-hidden="true" className="hidden h-4 w-px bg-neutral-200 sm:block" />
             <Link
               href="/post-a-job"
               className="inline-flex items-center gap-1 font-semibold text-primary-700 hover:text-primary-800"

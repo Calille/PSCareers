@@ -4,9 +4,9 @@ export interface NavLink {
 }
 
 export const navLinks: NavLink[] = [
+  { label: 'About', href: '/about' },
   { label: 'Job search', href: '/jobs' },
   { label: 'Staff', href: '/staff' },
   { label: 'Post a job', href: '/post-a-job' },
-  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
