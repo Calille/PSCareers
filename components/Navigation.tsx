@@ -31,7 +31,7 @@ export function Navigation() {
     <>
       <header className="sticky top-0 z-40 border-b border-neutral-200/80 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/75">
         <div className="container-page flex h-16 items-center justify-between md:h-20">
-          <Logo />
+          <Logo priority />
 
           <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
             {navLinks.map((link) => (

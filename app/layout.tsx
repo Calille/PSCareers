@@ -47,9 +47,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
-  icons: {
-    icon: '/favicon.ico',
-  },
+  // Favicon and apple-touch-icon are auto-detected from `app/icon.webp` and
+  // `app/apple-icon.webp` — Next injects the right <link> tags during build.
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
